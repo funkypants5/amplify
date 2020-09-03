@@ -1,13 +1,55 @@
 {
+  "api": {
+    "myapi": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "description": "test",
+              "apiKeyExpirationDays": 365
+            }
+          }
+        }
+      }
+    }
+  },
   "auth": {
-    "amplify81e77b2b": {
+    "amplify5b73e798": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
-      "dependsOn": []
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "xr": {
+    "SuppBotScene": {
+      "service": "Sumerian",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "interactions": {
+    "LexBot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    },
+    "lex2fea5c5e": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    },
+    "lex4d20befa": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
     }
   },
   "storage": {
-    "s3cc91c0ab": {
+    "s329b4ca21": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
