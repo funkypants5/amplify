@@ -28,21 +28,13 @@ Amplify.configure({
     }
   }
 });
+Storage: {
+        AWSS3: {
+            bucket: 'amplify7a616f1835a640d99de8313c8612e47c154936-amplify', //REQUIRED -  Amazon S3 bucket name
+            region: 'us-east-1', //OPTIONAL -  Amazon service region
+        }
+    }
 
-Storage.configure({
-customPrefix: {public:''}
-})
-
-// Imported default theme can be customized by overloading attributes
-const myTheme = {
-  ...AmplifyTheme,
-  color:'#00f0fc',
-  sectionHeader: {
-    ...AmplifyTheme.sectionHeader,
-    backgroundColor: '#ff6600'
-    
-  }
-};
 
 let params = {
   particles: {
