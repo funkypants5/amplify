@@ -136,7 +136,7 @@
 				"Runtime": "nodejs10.x",
 				"Timeout": "300",
 				"Code": {
-					"S3Bucket": "amplify-amplify-dev-150524-deployment",
+					"S3Bucket": "amplify-amplify-amplify-154936-deployment",
 					"S3Key": "amplify-builds/lex4d20befa-4f49546544512b466a65-build.zip"
 				}
 			}
